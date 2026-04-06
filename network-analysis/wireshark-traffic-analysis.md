@@ -14,18 +14,27 @@ Before using Wireshark, I needed to install it using the apt package manager.
 ```
 sudo apt update
 ```
+
+![Wireshark Update](../images/wireshark-update.png)
+
 This ensures the system has the latest package information.
 
 ## 1. Install Wireshark
 ```
 sudo apt install wireshark -y
 ```
+
+![Wireshark Installation](../images/wireshark-install.png)
+
 The -y flag skips confirmation prompts.
 
 ## 2. Verify Installation
 ```
 wireshark --version
 ```
+
+![Wireshark Version](../images/wireshark-version.png)
+
 This confirms that Wireshark is installed correctly.
 
 ## 3. Configuring Wireshark Permissions
@@ -65,6 +74,8 @@ newgrp wireshark
 groups
 ```
 
+![Wireshark Permissions](../images/wireshark-permissions.png)
+
 ## 7. Launching Wireshark 
 Wireshark can be launched either from the GUI or terminal.
 
@@ -72,6 +83,8 @@ Launch via terminal
 ```
 wireshark
 ```
+
+![Wireshark Interface](../images/wireshark-launch.png)
 
 ## 8. Understanding the Interface
 
@@ -98,6 +111,9 @@ Capture can be stopped using the stop button in Wireshark.
 
 To focus on ICMP packets, I applied a filter:
 icmp
+
+![Wireshark Filtering](../images/wireshark-filter.png)
+
 This displays only ping-related traffic.
 
 ## 13. Inspecting Packets
