@@ -23,9 +23,6 @@ This ensures the system has the latest package information.
 ```
 sudo apt install wireshark -y
 ```
-
-![Wireshark Installation](../images/wireshark-install.png)
-
 The -y flag skips confirmation prompts.
 
 ## 2. Verify Installation
