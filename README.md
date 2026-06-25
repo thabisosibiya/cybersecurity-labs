@@ -32,10 +32,10 @@ The focus is on network analysis, security monitoring, SIEM technologies, vulner
 ## SIEM & Security Monitoring
 
 ### Splunk
-- Introduction to Splunk (In Progress)
+- Introduction to Splunk
 
 ### Wazuh
-- Wazuh Fundamentals (In Progress)
+- Wazuh Fundamentals
 
 ---
 
