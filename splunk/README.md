@@ -1,46 +1,44 @@
 # Splunk Labs
 
+This directory contains my hands-on Splunk SIEM labs completed through TryHackMe and Splunk training.
+
 ## Overview
 
-This section documents my hands-on learning with Splunk SIEM.
+Splunk is a Security Information and Event Management (SIEM) platform used by Security Operations Centers (SOCs) to collect, index, search, and analyse machine data from multiple sources.
 
-Splunk is a Security Information and Event Management (SIEM) platform used to collect, search, analyze, and visualize machine-generated data. It is commonly used by Security Operations Center (SOC) teams for monitoring, threat detection, and incident investigation.
+These labs helped me develop practical skills in:
 
-## Topics Covered
-
-### Introduction to Splunk
-- Splunk architecture
-- Data ingestion
-- Indexes and sourcetypes
-- Basic searching
+- SIEM Fundamentals
+- Log Ingestion
 - Search Processing Language (SPL)
+- Event Investigation
+- Dashboard Visualisation
+- Security Log Analysis
 
-## Skills Developed
+---
 
-- Log analysis
-- Event investigation
-- Basic SPL queries
-- SIEM fundamentals
-- Security monitoring concepts
+## Labs
 
-## Example SPL Queries
+| Lab | Description |
+|------|-------------|
+| Splunk Basic Lab | Introduction to Splunk architecture, log ingestion, SPL searches and dashboards. |
 
-```spl
-index=*
-```
+---
 
-```spl
-index=* | stats count by host
-```
+## Skills Demonstrated
 
-```spl
-index=* | top source
-```
+- Understanding Splunk architecture
+- Working with Forwarders, Indexers and Search Heads
+- Importing log files
+- Searching indexed events using SPL
+- Investigating VPN log data
+- Creating dashboards and visualisations
 
-## Career Relevance
+---
 
-These skills support SOC analyst responsibilities including:
-- Alert investigation
-- Log review
-- Threat hunting
-- Security monitoring
+## Next Goals
+
+- Advanced SPL Queries
+- Threat Hunting
+- Dashboard Development
+- Splunk Detection Engineering
