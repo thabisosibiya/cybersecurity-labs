@@ -16,7 +16,7 @@ The focus is on developing practical analyst skills including:
 
 | Investigation | Status |
 |---------------|--------|
-| Windows Logon Investigation | 🚧 In Progress |
+| Windows Logon Investigation | ✅ Completed |
 | Failed Login Analysis | ⏳ Planned |
 | PowerShell Investigation | ⏳ Planned |
 | Privilege Escalation | ⏳ Planned |
