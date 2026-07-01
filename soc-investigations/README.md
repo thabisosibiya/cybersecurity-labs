@@ -25,3 +25,17 @@ The focus is on developing practical analyst skills including:
 | RDP Brute Force | ⏳ Planned |
 | Malware Triage | ⏳ Planned |
 | Incident Response Report | ⏳ Planned |
+
+## Skills Gained
+
+Throughout these investigations I am developing practical experience in:
+
+- Windows Event Viewer
+- Windows Security Logs
+- Authentication Monitoring
+- Event Correlation
+- PowerShell Analysis
+- Incident Triage
+- Threat Detection
+- MITRE ATT&CK Mapping
+- Security Documentation
