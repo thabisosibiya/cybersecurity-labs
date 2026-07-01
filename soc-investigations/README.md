@@ -40,3 +40,13 @@ Throughout these investigations I am developing practical experience in:
 - Threat Detection
 - MITRE ATT&CK Mapping
 - Security Documentation
+
+## Tools
+
+- Windows Event Viewer
+- Windows 11
+- UTM
+- PowerShell
+- Sysinternals (coming soon)
+- Wazuh (coming soon)
+- Splunk (coming soon)
