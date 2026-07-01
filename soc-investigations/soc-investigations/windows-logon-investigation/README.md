@@ -1,88 +1,81 @@
 Windows Logon Investigation
 
-Overview
+Objective
 
-This lab demonstrates how to investigate Windows authentication events using Windows Event Viewer. The objective was to identify successful logons, failed logons, and privileged account activity by analysing the Windows Security log.
-
-Objectives
-
-* Investigate successful authentication events (Event ID 4624)
-* Investigate failed authentication events (Event ID 4625)
-* Review privileged logon events (Event ID 4672)
-* Understand how Windows records authentication activity
-* Practice documenting findings as a SOC analyst
+Investigate Windows authentication events using Event Viewer to identify successful logons, failed logons, and privileged account activity.
 
 ⸻
 
 Lab Environment
 
-* Windows 11 Virtual Machine
-* Windows Event Viewer
+Component	Details
+Operating System	Windows 11
+Platform	UTM Virtual Machine
+Tool	Windows Event Viewer
+Log Source	Windows Security Log
 
 ⸻
 
-Event IDs Investigated
+Tools Used
 
-Event ID	Description
-4624	Successful Logon
-4625	Failed Logon
-4672	Special Privileges Assigned
+* Windows Event Viewer
+* Windows Security Logs
 
 ⸻
 
 Investigation Steps
 
-1. Opened Event Viewer.
+1. Opened Windows Event Viewer.
 2. Navigated to Windows Logs → Security.
-3. Filtered the Security log using Event IDs.
-4. Reviewed successful logons (4624).
-5. Generated failed logons by intentionally entering an incorrect password.
-6. Reviewed privileged logons (4672).
-7. Recorded observations and documented the investigation.
+3. Filtered events using Event IDs 4624, 4625, and 4672.
+4. Investigated successful logon activity.
+5. Generated failed logon events by intentionally entering an incorrect password.
+6. Reviewed privileged logon events.
+7. Recorded observations and documented findings.
 
 ⸻
 
-Investigation Evidence
+Evidence
 
 Security Log Overview
 
-Shows the Windows Security log before filtering.
-
-⸻
-
 Event ID 4624 – Successful Logons
-
-Filtered the Security log to display successful authentication events.
-
-⸻
 
 Event ID 4624 – Event Details
 
-Reviewed the event details including account name, logon type, and timestamp.
-
-⸻
-
 Event ID 4625 – Failed Logons
-
-Generated failed authentication events by entering an incorrect password.
-
-⸻
 
 Event ID 4625 – Event Details
 
-Reviewed the failure reason, status code, sub-status code, and logon type.
-
-⸻
-
 Event ID 4672 – Privileged Logons
-
-Reviewed events showing accounts that received elevated privileges.
-
-⸻
 
 Event ID 4672 – Event Details
 
-Analysed the privileges assigned after successful authentication.
+⸻
+
+Analysis
+
+Event ID 4624
+
+Successful authentication events were reviewed to identify user logon activity and establish a baseline of normal system usage.
+
+Event ID 4625
+
+Failed authentication events were analysed to determine why logon attempts failed. These events are useful for identifying password guessing, brute-force attempts, or user authentication issues.
+
+Event ID 4672
+
+Privileged logon events were reviewed to identify accounts that received elevated privileges after successful authentication.
+
+⸻
+
+Key Findings
+
+* Successfully filtered Windows Security logs using Event IDs.
+* Identified successful and failed authentication events.
+* Generated and analysed failed logon events in a controlled lab environment.
+* Investigated privileged account logons.
+* Practised documenting evidence in a structured investigation.
 
 ⸻
 
@@ -91,12 +84,20 @@ Skills Demonstrated
 * Windows Event Viewer
 * Windows Security Log Analysis
 * Authentication Investigation
-* Security Event Filtering
-* Basic SOC Alert Triage
-* Security Documentation
+* Security Event Analysis
+* SOC Alert Triage
+* Technical Documentation
 
 ⸻
 
-Key Takeaways
+MITRE ATT&CK Mapping
 
-This investigation demonstrates how Windows records authentication activity and how these logs can be analysed to identify successful logons, failed logons, and privileged account activity. These are fundamental investigation techniques used by SOC analysts during authentication-related security investigations.
+Technique	ID
+Valid Accounts	T1078
+Brute Force	T1110
+
+⸻
+
+Conclusion
+
+This lab provided practical experience investigating Windows authentication events and reinforced core SOC analyst skills, including log analysis, authentication monitoring, evidence collection, and security documentation.
