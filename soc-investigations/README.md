@@ -1,6 +1,8 @@
 # SOC Investigations
 
-This repository contains hands-on Security Operations Center (SOC) investigations completed as part of my cybersecurity training.
+This repository showcases hands-on Security Operations Center (SOC) investigations completed in a home lab environment. Each investigation focuses on developing practical blue team skills through Windows log analysis, threat detection, incident triage, and security monitoring.
+
+The investigations are documented in a structured format that includes objectives, evidence, analysis, MITRE ATT&CK mapping, and key findings.
 
 The focus is on developing practical analyst skills including:
 
